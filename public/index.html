@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body
+    class="bg-local bg-red"
+    style="background-image:url(images/bg-intro-desktop.png)"
+  >
+    <div class="container p-8 mx-auto md:p-0">
+      <div class="grid h-screen grid-cols-1 gap-16 md:gap-8 md:grid-cols-2">
+        <div class="flex flex-col justify-center mt-8 md:mt-0">
+          <h1
+            class="mb-6 text-4xl font-black leading-tight tracking-tight text-center text-white md:text-6xl md:text-left"
+          >
+            Learn to code by watching others
+          </h1>
+          <p
+            class="text-lg font-semibold leading-relaxed text-center text-gray-200 md:text-left"
+          >
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-center w-full md:max-w-md">
+          <div
+            class="w-full py-4 mb-5 text-sm text-center text-gray-200 rounded-lg bg-blue shadow-outer"
+          >
+            <span class="font-semibold text-white">Try it free 7 days</span>
+            then $20/mo. thereafter
+          </div>
+          <form
+            class="grid grid-cols-1 gap-4 p-8 bg-white rounded-lg shadow-outer"
+          >
+            <input
+              type="text"
+              placeholder="First Name"
+              class="w-full px-4 py-3 font-medium text-gray-700 border rounded appearance-none focus:outline-none focus:border-blue"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="w-full px-4 py-3 font-medium text-gray-700 border rounded appearance-none focus:outline-none focus:border-blue"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full px-4 py-3 font-medium text-gray-700 border rounded appearance-none focus:outline-none focus:border-blue"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="w-full px-4 py-3 font-medium text-gray-700 border rounded appearance-none focus:outline-none focus:border-blue"
+            />
+            <button
+              type="submit"
+              class="w-full py-3 tracking-wider text-white uppercase rounded shadow-inner bg-green hover:bg-green-light"
+            >
+              Claim your free trial
+            </button>
+            <div class="text-xs text-center text-blue-grayish">
+              By clicking the button, you are agreeing to our<br />
+              <a href="#" class="font-semibold text-red">Terms and Services</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
